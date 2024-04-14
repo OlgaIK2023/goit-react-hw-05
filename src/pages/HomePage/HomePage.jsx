@@ -33,7 +33,7 @@ const HomePage = () => {
    if (trendingMovies !== null) {
     return (
       <section className={css.home_section}>
-          <h1 className={css.home_title}>Tranding today</h1>
+          <h1 className={css.home_title}>Trending today</h1>
           {error && <Error />}
         <MovieList trendingMovies={trendingMovies} />
         {showBtn && <LoadMoreBtn onClickButton={onClickButton} />}
